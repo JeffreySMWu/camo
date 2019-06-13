@@ -39,7 +39,7 @@ DeviceOrientation = function (_target) {
     }
 }
 
-var new_device = new DeviceOrientation($("#layer"));
+// var new_device = new DeviceOrientation($("#layer"));
 
 
 var x, y;
