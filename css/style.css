@@ -24,6 +24,7 @@ html, body {
 }
 #brush {
     position: absolute;
+    pointer-events: none;
     z-index: 2;
     -webkit-transform-origin: top left;
             transform-origin: top left;
