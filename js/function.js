@@ -6,13 +6,19 @@ DeviceOrientation = function (_target) {
                 gamma = event.gamma,
                 a = Math.round(alpha),
                 b = Math.round(beta),
-                g = Math.round(gamma),
-                origin = 0;
+                g = Math.round(gamma);
 
             console.log("X:" + g);
             console.log("Y:" + b);
-            if(b > origin ) {
-                origin = b;
+            if (b < 90 && b > -90) {
+                TweenMax.set(_target, {
+                    y: -b / 2
+                });
+            }
+            if (g < 90 && g > -90) {
+                TweenMax.set(_target, {
+                    x: -g * 2
+                });
             }
         }, false);
     } else {
