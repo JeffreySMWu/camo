@@ -55,3 +55,14 @@ $(document).mousemove( function(e) {
   $dot.css({"left": x});
   $dot.css({"top": y});
 });
+
+function myFunction() {
+    //Get the 'container' offset relative to the document:
+  offset = $('body').offset();
+  //Track the mouse position:
+  x = e.pageX - offset.left;
+  y = e.pageY - offset.top;
+  //Move the 'dot':
+  $dot.css({"left": x});
+  $dot.css({"top": y});
+}
